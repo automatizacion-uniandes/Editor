@@ -6,9 +6,50 @@
       <opciones valor="18 años o mas"/>
       <opciones valor="Menos de 18"/>
     </preguntas>
+    <preguntas xsi:type="encuesta2:Unica" enunciado="Cual es su estado civil?">
+      <opciones valor="Casado"/>
+      <opciones valor="Soltero"/>
+      <opciones valor="Union Libre"/>
+    </preguntas>
+    <preguntas xsi:type="encuesta2:Unica" enunciado="Cual es su grado de escolaridad?">
+      <opciones valor="Bachiller"/>
+      <opciones valor="Tecnico"/>
+      <opciones valor="Tecnologo"/>
+      <opciones valor="Universitario"/>
+      <opciones valor="Postgrado"/>
+    </preguntas>
+    <preguntas xsi:type="encuesta2:Unica" enunciado="Hace cuanto vive con su pareja?">
+      <opciones valor="Menos de dos años"/>
+      <opciones valor="2 años o mas"/>
+    </preguntas>
     <nodos xsi:type="encuesta2:NodoInicio" texto="Inicio Modulo datos personales"/>
   </modulos>
-  <modulos nombre="Modulo de Ingresos"/>
+  <modulos nombre="Modulo de Ingresos">
+    <preguntas xsi:type="encuesta2:Unica" enunciado="Cuales son sus ingresos mensuales?">
+      <opciones valor="Menos de un salario minimo"/>
+      <opciones valor="Un salario minimo"/>
+      <opciones valor="Mas de un salario minimo"/>
+    </preguntas>
+    <preguntas xsi:type="encuesta2:Unica" enunciado="Cuantos trabajos tiene?">
+      <opciones valor="1"/>
+      <opciones valor="2"/>
+      <opciones valor="Mas de dos"/>
+    </preguntas>
+    <preguntas xsi:type="encuesta2:Unica" enunciado="Usted es trabajador independiente?">
+      <opciones valor="si"/>
+      <opciones valor="no"/>
+    </preguntas>
+    <preguntas xsi:type="encuesta2:Multiple" enunciado="Su/s contrato/s es/son">
+      <opciones valor="A termino fijo"/>
+      <opciones valor="Prestacion de servicios"/>
+      <opciones valor="A termino indefinido"/>
+    </preguntas>
+    <preguntas xsi:type="encuesta2:Unica" enunciado="Cotiza salud y pension?">
+      <opciones valor="si"/>
+      <opciones valor="no"/>
+    </preguntas>
+  </modulos>
+  <modulos nombre="Modulo Universitario"/>
   <navegacion desde="//@modulos.0/@preguntas.0" hacia="//@modulos.0/@preguntas.1"/>
   <navegacion desde="//@modulos.0/@nodos.0" hacia="//@modulos.0/@preguntas.0"/>
 </encuesta2:Encuesta>
