@@ -23,6 +23,7 @@
       <opciones valor="2 años o mas"/>
     </preguntas>
     <nodos xsi:type="encuesta2:NodoInicio" texto="Inicio Modulo datos personales"/>
+    <nodos xsi:type="encuesta2:NodoFin" texto="Fin"/>
   </modulos>
   <modulos nombre="Modulo de Ingresos">
     <preguntas xsi:type="encuesta2:Unica" enunciado="Cuales son sus ingresos mensuales?">
@@ -48,8 +49,31 @@
       <opciones valor="si"/>
       <opciones valor="no"/>
     </preguntas>
+    <nodos xsi:type="encuesta2:NodoInicio" texto="inicio mod Ingresos"/>
   </modulos>
-  <modulos nombre="Modulo Universitario"/>
+  <modulos nombre="Modulo Universitario">
+    <preguntas xsi:type="encuesta2:Unica" enunciado="Cuantos años estudio en la universidad?">
+      <opciones valor="4 años"/>
+      <opciones valor="mas de 4 años y menos de 8"/>
+      <opciones valor="8 años o mas"/>
+    </preguntas>
+    <preguntas xsi:type="encuesta2:Multiple" enunciado="Estudio en una universidad?">
+      <opciones valor="Publica"/>
+      <opciones valor="Privada"/>
+      <opciones valor="Privada y publica"/>
+    </preguntas>
+    <preguntas xsi:type="encuesta2:Unica" enunciado="Usted termino todos sus estudios?">
+      <opciones valor="si"/>
+      <opciones valor="no"/>
+    </preguntas>
+    <preguntas xsi:type="encuesta2:Unica" enunciado="Usted Pago?">
+      <opciones valor="Menos de un millon"/>
+      <opciones valor="Mas de un millon y menos de 4 millones"/>
+      <opciones valor="Mas de 4 millones"/>
+    </preguntas>
+    <preguntas xsi:type="encuesta2:Abierta" enunciado="Cual es el nombre de su universidad?"/>
+    <nodos xsi:type="encuesta2:NodoInicio" texto="Inicio Mod universitario"/>
+  </modulos>
   <navegacion desde="//@modulos.0/@preguntas.0" hacia="//@modulos.0/@preguntas.1"/>
   <navegacion desde="//@modulos.0/@nodos.0" hacia="//@modulos.0/@preguntas.0"/>
 </encuesta2:Encuesta>
