@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<encuesta2:Encuesta xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:encuesta2="http://www.example.org/encuesta2">
+  <modulos nombre="Modulo de Datos Personales">
+    <preguntas xsi:type="encuesta2:Abierta" enunciado="¿Cual es su nombre?" prefijo="A"/>
+    <preguntas xsi:type="encuesta2:Unica" enunciado="¿Cual es su edad?" prefijo="UR">
+      <opciones valor="18 años o mas"/>
+      <opciones valor="Menos de 18"/>
+    </preguntas>
+    <nodos xsi:type="encuesta2:NodoInicio" texto="Inicio Modulo datos personales"/>
+  </modulos>
+  <modulos nombre="Modulo de Ingresos"/>
+  <navegacion desde="//@modulos.0/@preguntas.0" hacia="//@modulos.0/@preguntas.1"/>
+  <navegacion desde="//@modulos.0/@nodos.0" hacia="//@modulos.0/@preguntas.0"/>
+</encuesta2:Encuesta>
